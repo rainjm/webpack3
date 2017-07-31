@@ -78,9 +78,9 @@ module.exports = Merge(CommonConfig, {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']), // 构建前清理dist
-        new webpack.LoaderOptionsPlugin({minimize: true, debug: false}),
         new ExtractTextPlugin({filename: 'css/[name].[chunkhash].css', disable: false, allChunks: true}),
         // new ManifestPlugin(), // 生成 Manifest.json
+        new webpack.LoaderOptionsPlugin({minimize: true, debug: false}),
         new webpack.optimize.UglifyJsPlugin({ // 压缩
             beautify: false,
             mangle: {
