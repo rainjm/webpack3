@@ -5,13 +5,13 @@
   "main": "postcss.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack",
+    "start": "npm run dev",
     "build": "webpack --config build/webpack.prod.js",
     "dev": "webpack-dev-server --config build/webpack.dev.js --open",
     "bs": "browser-sync start --server 'dist'"
   },
   "keywords": [],
-  "author": "",
+  "author": "幾米",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.2",

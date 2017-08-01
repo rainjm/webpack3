@@ -2,6 +2,7 @@ module.exports = {
     "extends": "airbnb",
     "rules": {
         'max-len': ["error", 200],
+        // 'no-alert': 'off',
         'no-new': 'off',
 		"no-console": "off", //允许console
 		"indent": ["error", 4], //4个空格缩进TabSize：4
